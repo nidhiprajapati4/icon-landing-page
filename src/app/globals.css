@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.MuiOutlinedInput-notchedOutline {
+    border: none;
+}
+
+.iconclass {
+    width: 100%;
+    padding-top: 32px;
+    padding-left: 40px;
+
+
+    .slick-arrow {
+        background-color: black;
+        height: 91%;
+        width: 20%;
+        margin-top: 12px;
+        opacity: 0;
+    }
+
+    &&:hover {
+        .slick-arrow {
+            opacity: 1;
+        }
+    }
+
+
+
+    &&:hover {
+        .slick-dots {
+            opacity: 1;
+        }
+    }
+
+    &&:hover {
+        .arrowbutton {
+            opacity: 1;
+        }
+    }
+
+    .arrowbutton {
+        opacity: 0;
+    }
+
+    .slick-dots {
+        width: 16%;
+        top: 0;
+        right: 0;
+        opacity: 0;
+
+    }
+}
+
+.slick-slide, .slick-active, .slick-center, .slick-current div{
+    &&:hover {
+        .view-button {
+            display: block;
+        }
+
+        .view-content {
+            display: block;
+        }
+    }
+
+    &&:hover {
+        .red-border {
+            display: none;
+        }
+    }
+
+    
+
+}
+
+.icon-img:hover{
+    transform: scale(1.3);
+}
+
+.grid-main{
+    overflow: hidden;
+    width: 260px ! important;
+    border-radius: 10px;
+}
