@@ -69,13 +69,10 @@ export const DrawerTabsGrid = styled(Tabs)`
 export const DrawerMainGrid = styled(Grid)`
   display: none;
   @media only screen and (max-width: 900px) {
-    display: contents;
+    display: block;
   }
 `;
 
 export const RightDrawer = styled(Drawer)`
-  display: none;
-  @media only screen and (max-width: 900px) {
-    display: block;
-  }
+  display: block;
 `;

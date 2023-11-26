@@ -1,16 +1,7 @@
 "use client";
 import * as React from "react";
 import { useState } from "react";
-import {
-  Grid,
-  Drawer,
-  Box,
-  Button,
-  IconButton,
-  Tabs,
-  Tab,
-  Divider,
-} from "@mui/material";
+import { Grid, Box, IconButton, Tabs, Tab, Divider } from "@mui/material";
 import {
   MainGrid,
   HeadToolbar,
@@ -20,7 +11,7 @@ import {
   DrawerTabsGrid,
   DrawerMainGrid,
   RightDrawer,
-  Logo
+  Logo,
 } from "./HeaderStyle";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -46,10 +37,7 @@ export default function Header() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <Logo
-              src="/Images/icon.svg"
-              alt="logo"
-            ></Logo>
+            <Logo src="/Images/icon.svg" alt="logo"></Logo>
           </IconButton>
           <Grid>
             <Tabs aria-label="basic tabs example">
@@ -64,9 +52,7 @@ export default function Header() {
             <AccountButton>Create an account</AccountButton>
           </Grid>
           <DrawerMainGrid>
-            <Grid onClick={handleDrawerOpen}>
-              <MenuIcon />
-            </Grid>
+            <MenuIcon onClick={handleDrawerOpen} />
             <RightDrawer anchor="right" open={open} onClose={handleDrawerClose}>
               <DrawerTabsGrid>
                 <TabItem label="How it works" />
@@ -75,7 +61,7 @@ export default function Header() {
                 <TabItem label="FAQs" />
               </DrawerTabsGrid>
               <Divider />
-              <Grid style={{display: 'grid'}}>
+              <Grid style={{ display: "grid" }}>
                 <LoginButton>Login</LoginButton>
                 <AccountButton>Create an account</AccountButton>
               </Grid>
